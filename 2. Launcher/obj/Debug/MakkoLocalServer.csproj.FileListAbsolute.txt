@@ -1,0 +1,104 @@
+D:\Project\Coding101\Makobox\4. Local Server Development\MakkoLocalServer\bin\Debug\MakkoLocalServer.exe
+D:\Project\Coding101\Makobox\4. Local Server Development\MakkoLocalServer\bin\Debug\MakkoLocalServer.pdb
+D:\Project\Coding101\Makobox\4. Local Server Development\MakkoLocalServer\obj\Debug\MakkoLocalServer.csprojResolveAssemblyReference.cache
+D:\Project\Coding101\Makobox\4. Local Server Development\MakkoLocalServer\obj\Debug\MakkoLocalServer.Properties.Resources.resources
+D:\Project\Coding101\Makobox\4. Local Server Development\MakkoLocalServer\obj\Debug\MakkoLocalServer.csproj.GenerateResource.Cache
+D:\Project\Coding101\Makobox\4. Local Server Development\MakkoLocalServer\obj\Debug\MakkoLocalServer.exe
+D:\Project\Coding101\Makobox\4. Local Server Development\MakkoLocalServer\obj\Debug\MakkoLocalServer.pdb
+D:\Project\Coding101\Makobox\4. Local Server Development\MakkoLocalServer\obj\Debug\MakkoLocalServer.Form1.resources
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer\obj\Debug\MakkoLocalServer.exe
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer\obj\Debug\MakkoLocalServer.pdb
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer\bin\Debug\MakkoLocalServer.exe
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer\bin\Debug\MakkoLocalServer.pdb
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer\obj\Debug\MakkoLocalServer.csprojResolveAssemblyReference.cache
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer\obj\Debug\MakkoLocalServer.Form1.resources
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer\obj\Debug\MakkoLocalServer.Properties.Resources.resources
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer\obj\Debug\MakkoLocalServer.csproj.GenerateResource.Cache
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer2\obj\Debug\MakkoLocalServer.exe
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer2\obj\Debug\MakkoLocalServer.pdb
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer2\bin\Debug\MakkoLocalServer.exe
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer2\bin\Debug\MakkoLocalServer.pdb
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer2\obj\Debug\MakkoLocalServer.csprojResolveAssemblyReference.cache
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer2\obj\Debug\MakkoLocalServer.Form1.resources
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer2\obj\Debug\MakkoLocalServer.Properties.Resources.resources
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer2\obj\Debug\MakkoLocalServer.csproj.GenerateResource.Cache
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer3\obj\Debug\MakkoLocalServer.exe
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer3\obj\Debug\MakkoLocalServer.pdb
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer3\bin\Debug\MakkoLocalServer.exe
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer3\bin\Debug\MakkoLocalServer.pdb
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer3\obj\Debug\MakkoLocalServer.csprojResolveAssemblyReference.cache
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer3\obj\Debug\MakkoLocalServer.Form1.resources
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer3\obj\Debug\MakkoLocalServer.Properties.Resources.resources
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer3\obj\Debug\MakkoLocalServer.csproj.GenerateResource.Cache
+C:\Users\Johnny\Desktop\MakkoLocalServer3\obj\Debug\MakkoLocalServer.exe
+C:\Users\Johnny\Desktop\MakkoLocalServer3\obj\Debug\MakkoLocalServer.pdb
+C:\Users\Johnny\Desktop\MakkoLocalServer3\bin\Debug\MakkoLocalServer.exe
+C:\Users\Johnny\Desktop\MakkoLocalServer3\bin\Debug\MakkoLocalServer.pdb
+C:\Users\Johnny\Desktop\MakkoLocalServer3\obj\Debug\MakkoLocalServer.csprojResolveAssemblyReference.cache
+C:\Users\Johnny\Desktop\MakkoLocalServer3\obj\Debug\MakkoLocalServer.Form1.resources
+C:\Users\Johnny\Desktop\MakkoLocalServer3\obj\Debug\MakkoLocalServer.Properties.Resources.resources
+C:\Users\Johnny\Desktop\MakkoLocalServer3\obj\Debug\MakkoLocalServer.csproj.GenerateResource.Cache
+C:\Users\Johnny\Desktop\MakkoLocalServer4\obj\Debug\MakkoLocalServer.exe
+C:\Users\Johnny\Desktop\MakkoLocalServer4\obj\Debug\MakkoLocalServer.pdb
+C:\Users\Johnny\Desktop\MakkoLocalServer4\bin\Debug\MakkoLocalServer.exe
+C:\Users\Johnny\Desktop\MakkoLocalServer4\bin\Debug\MakkoLocalServer.pdb
+C:\Users\Johnny\Desktop\MakkoLocalServer4\obj\Debug\MakkoLocalServer.csprojResolveAssemblyReference.cache
+C:\Users\Johnny\Desktop\MakkoLocalServer4\obj\Debug\MakkoLocalServer.Form1.resources
+C:\Users\Johnny\Desktop\MakkoLocalServer4\obj\Debug\MakkoLocalServer.Properties.Resources.resources
+C:\Users\Johnny\Desktop\MakkoLocalServer4\obj\Debug\MakkoLocalServer.csproj.GenerateResource.Cache
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer4\obj\Debug\MakkoLocalServer.exe
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer4\obj\Debug\MakkoLocalServer.pdb
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer4\bin\Debug\MakkoLocalServer.exe
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer4\bin\Debug\MakkoLocalServer.pdb
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer4\obj\Debug\MakkoLocalServer.csprojResolveAssemblyReference.cache
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer4\obj\Debug\MakkoLocalServer.Form1.resources
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer4\obj\Debug\MakkoLocalServer.Properties.Resources.resources
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer4\obj\Debug\MakkoLocalServer.csproj.GenerateResource.Cache
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer5\obj\Debug\MakkoLocalServer.exe
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer5\obj\Debug\MakkoLocalServer.pdb
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer5\bin\Debug\MakkoLocalServer.exe
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer5\bin\Debug\MakkoLocalServer.pdb
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer5\obj\Debug\MakkoLocalServer.csprojResolveAssemblyReference.cache
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer5\obj\Debug\MakkoLocalServer.Form1.resources
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer5\obj\Debug\MakkoLocalServer.Properties.Resources.resources
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer5\obj\Debug\MakkoLocalServer.csproj.GenerateResource.Cache
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer6\obj\Debug\MakkoLocalServer.exe
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer6\obj\Debug\MakkoLocalServer.pdb
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer6\obj\Debug\MakkoLocalServer.csprojResolveAssemblyReference.cache
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer6\obj\Debug\MakkoLocalServer.Form1.resources
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer6\obj\Debug\MakkoLocalServer.Properties.Resources.resources
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer6\obj\Debug\MakkoLocalServer.csproj.GenerateResource.Cache
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer6\bin\Debug\MakkoLocalServer.exe
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer6\bin\Debug\MakkoLocalServer.pdb
+C:\Users\Johnny\Desktop\MakkoLocalServer6\obj\Debug\MakkoLocalServer.exe
+C:\Users\Johnny\Desktop\MakkoLocalServer6\obj\Debug\MakkoLocalServer.pdb
+C:\Users\Johnny\Desktop\MakkoLocalServer6\bin\Debug\MakkoLocalServer.exe
+C:\Users\Johnny\Desktop\MakkoLocalServer6\bin\Debug\MakkoLocalServer.pdb
+C:\Users\Johnny\Desktop\MakkoLocalServer6\obj\Debug\MakkoLocalServer.csprojResolveAssemblyReference.cache
+C:\Users\Johnny\Desktop\MakkoLocalServer6\obj\Debug\MakkoLocalServer.Form1.resources
+C:\Users\Johnny\Desktop\MakkoLocalServer6\obj\Debug\MakkoLocalServer.Properties.Resources.resources
+C:\Users\Johnny\Desktop\MakkoLocalServer6\obj\Debug\MakkoLocalServer.csproj.GenerateResource.Cache
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer7\obj\Debug\MakkoLocalServer.exe
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer7\obj\Debug\MakkoLocalServer.pdb
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer7\bin\Debug\MakkoLocalServer.exe
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer7\bin\Debug\MakkoLocalServer.pdb
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer7\obj\Debug\MakkoLocalServer.csprojResolveAssemblyReference.cache
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer7\obj\Debug\MakkoLocalServer.Form1.resources
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer7\obj\Debug\MakkoLocalServer.Properties.Resources.resources
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer7\obj\Debug\MakkoLocalServer.csproj.GenerateResource.Cache
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer8\obj\Debug\MakkoLocalServer.exe
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer8\obj\Debug\MakkoLocalServer.pdb
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer8\bin\Debug\MakkoLocalServer.exe
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer8\bin\Debug\MakkoLocalServer.pdb
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer8\obj\Debug\MakkoLocalServer.csprojResolveAssemblyReference.cache
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer8\obj\Debug\MakkoLocalServer.Form1.resources
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer8\obj\Debug\MakkoLocalServer.Properties.Resources.resources
+D:\Project\Binary Creation\Makobox\4. Local Server Development\MakkoLocalServer8\obj\Debug\MakkoLocalServer.csproj.GenerateResource.Cache
+D:\Project\Binary Creation\Makobox\7. Launcher\MakkoLocalServer\obj\Debug\MakkoLocalServer.csprojResolveAssemblyReference.cache
+D:\Project\Binary Creation\Makobox\7. Launcher\MakkoLocalServer\obj\Debug\MakkoLocalServer.Properties.Resources.resources
+D:\Project\Binary Creation\Makobox\7. Launcher\MakkoLocalServer\obj\Debug\MakkoLocalServer.csproj.GenerateResource.Cache
+D:\Project\Binary Creation\Makobox\7. Launcher\MakkoLocalServer\obj\Debug\MakkoLocalServer.LoadingScreen.resources
+D:\Project\Binary Creation\Makobox\7. Launcher\MakkoLocalServer\bin\Debug\Launcher.exe
+D:\Project\Binary Creation\Makobox\7. Launcher\MakkoLocalServer\bin\Debug\Launcher.pdb
+D:\Project\Binary Creation\Makobox\7. Launcher\MakkoLocalServer\obj\Debug\Launcher.exe
+D:\Project\Binary Creation\Makobox\7. Launcher\MakkoLocalServer\obj\Debug\Launcher.pdb

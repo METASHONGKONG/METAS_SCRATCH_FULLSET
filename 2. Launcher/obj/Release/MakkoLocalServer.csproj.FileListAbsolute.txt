@@ -1,0 +1,34 @@
+D:\Project\Binary Creation\Makobox\7. Launcher\MakkoLocalServer\bin\Release\Launcher.exe
+D:\Project\Binary Creation\Makobox\7. Launcher\MakkoLocalServer\bin\Release\Launcher.pdb
+D:\Project\Binary Creation\Makobox\7. Launcher\MakkoLocalServer\obj\Release\MakkoLocalServer.csprojResolveAssemblyReference.cache
+D:\Project\Binary Creation\Makobox\7. Launcher\MakkoLocalServer\obj\Release\MakkoLocalServer.LoadingScreen.resources
+D:\Project\Binary Creation\Makobox\7. Launcher\MakkoLocalServer\obj\Release\MakkoLocalServer.Properties.Resources.resources
+D:\Project\Binary Creation\Makobox\7. Launcher\MakkoLocalServer\obj\Release\MakkoLocalServer.csproj.GenerateResource.Cache
+D:\Project\Binary Creation\Makobox\7. Launcher\MakkoLocalServer\obj\Release\Launcher.exe
+D:\Project\Binary Creation\Makobox\7. Launcher\MakkoLocalServer\obj\Release\Launcher.pdb
+D:\Project\Binary Creation\Makobox\7.3. Launcher (IP Version)\MakkoLocalServer\obj\Release\Launcher.exe
+D:\Project\Binary Creation\Makobox\7.3. Launcher (IP Version)\MakkoLocalServer\obj\Release\Launcher.pdb
+D:\Project\Binary Creation\Makobox\7.3. Launcher (IP Version)\MakkoLocalServer\bin\Release\Launcher.exe
+D:\Project\Binary Creation\Makobox\7.3. Launcher (IP Version)\MakkoLocalServer\bin\Release\Launcher.pdb
+D:\Project\Binary Creation\Makobox\7.3. Launcher (IP Version)\MakkoLocalServer\obj\Release\MakkoLocalServer.csprojResolveAssemblyReference.cache
+D:\Project\Binary Creation\Makobox\7.3. Launcher (IP Version)\MakkoLocalServer\obj\Release\MakkoLocalServer.LoadingScreen.resources
+D:\Project\Binary Creation\Makobox\7.3. Launcher (IP Version)\MakkoLocalServer\obj\Release\MakkoLocalServer.Properties.Resources.resources
+D:\Project\Binary Creation\Makobox\7.3. Launcher (IP Version)\MakkoLocalServer\obj\Release\MakkoLocalServer.csproj.GenerateResource.Cache
+C:\Users\Johnny\Desktop\7.3. Launcher (IP Version)\MakkoLocalServer\obj\Release\Launcher.exe
+C:\Users\Johnny\Desktop\7.3. Launcher (IP Version)\MakkoLocalServer\obj\Release\Launcher.pdb
+C:\Users\Ken Lai\Desktop\metas_development\7.3. Launcher (IP Version)\MakkoLocalServer\obj\Release\Launcher.exe
+C:\Users\Ken Lai\Desktop\metas_development\7.3. Launcher (IP Version)\MakkoLocalServer\obj\Release\Launcher.pdb
+C:\Users\Ken Lai\Desktop\metas_development\7.3. Launcher (IP Version)\MakkoLocalServer\bin\Release\Launcher.exe
+C:\Users\Ken Lai\Desktop\metas_development\7.3. Launcher (IP Version)\MakkoLocalServer\bin\Release\Launcher.pdb
+C:\Users\Ken Lai\Desktop\metas_development\7.3. Launcher (IP Version)\MakkoLocalServer\obj\Release\MakkoLocalServer.csprojResolveAssemblyReference.cache
+C:\Users\Ken Lai\Desktop\metas_development\7.3. Launcher (IP Version)\MakkoLocalServer\obj\Release\MakkoLocalServer.LoadingScreen.resources
+C:\Users\Ken Lai\Desktop\metas_development\7.3. Launcher (IP Version)\MakkoLocalServer\obj\Release\MakkoLocalServer.Properties.Resources.resources
+C:\Users\Ken Lai\Desktop\metas_development\7.3. Launcher (IP Version)\MakkoLocalServer\obj\Release\MakkoLocalServer.csproj.GenerateResource.Cache
+C:\Users\Ken Lai\Documents\Github\METAS_SCRATCH_LAUNCHER\obj\Release\Launcher.exe
+C:\Users\Ken Lai\Documents\Github\METAS_SCRATCH_LAUNCHER\obj\Release\Launcher.pdb
+C:\Users\Ken Lai\Documents\Github\METAS_SCRATCH_LAUNCHER\bin\Release\Launcher.exe
+C:\Users\Ken Lai\Documents\Github\METAS_SCRATCH_LAUNCHER\bin\Release\Launcher.pdb
+C:\Users\Ken Lai\Documents\Github\METAS_SCRATCH_LAUNCHER\obj\Release\MakkoLocalServer.csprojResolveAssemblyReference.cache
+C:\Users\Ken Lai\Documents\Github\METAS_SCRATCH_LAUNCHER\obj\Release\MakkoLocalServer.LoadingScreen.resources
+C:\Users\Ken Lai\Documents\Github\METAS_SCRATCH_LAUNCHER\obj\Release\MakkoLocalServer.Properties.Resources.resources
+C:\Users\Ken Lai\Documents\Github\METAS_SCRATCH_LAUNCHER\obj\Release\MakkoLocalServer.csproj.GenerateResource.Cache
