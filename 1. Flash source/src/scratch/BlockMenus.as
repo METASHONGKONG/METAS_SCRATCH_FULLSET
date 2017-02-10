@@ -978,7 +978,7 @@ public class BlockMenus implements DragClient {
 	}
 
 	private function motorPinMenu(evt:MouseEvent):void {
-		var motorPin:Array = [3, 5];
+		var motorPin:Array = [1, 2];
 		var m:Menu = new Menu(setBlockArg, 'motorPin');
 		for each (var i:int in motorPin) m.addItem(i);
 		showMenu(m);

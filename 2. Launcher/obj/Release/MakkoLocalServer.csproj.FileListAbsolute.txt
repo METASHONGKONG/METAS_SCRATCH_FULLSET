@@ -32,3 +32,11 @@ C:\Users\Ken Lai\Documents\Github\METAS_SCRATCH_LAUNCHER\obj\Release\MakkoLocalS
 C:\Users\Ken Lai\Documents\Github\METAS_SCRATCH_LAUNCHER\obj\Release\MakkoLocalServer.LoadingScreen.resources
 C:\Users\Ken Lai\Documents\Github\METAS_SCRATCH_LAUNCHER\obj\Release\MakkoLocalServer.Properties.Resources.resources
 C:\Users\Ken Lai\Documents\Github\METAS_SCRATCH_LAUNCHER\obj\Release\MakkoLocalServer.csproj.GenerateResource.Cache
+C:\Users\Ken Lai\Documents\Github\METAS_SCRATCH_FULLSET\2. Launcher\obj\Release\Launcher.exe
+C:\Users\Ken Lai\Documents\Github\METAS_SCRATCH_FULLSET\2. Launcher\obj\Release\Launcher.pdb
+C:\Users\Ken Lai\Documents\Github\METAS_SCRATCH_FULLSET\2. Launcher\bin\Release\Launcher.exe
+C:\Users\Ken Lai\Documents\Github\METAS_SCRATCH_FULLSET\2. Launcher\bin\Release\Launcher.pdb
+C:\Users\Ken Lai\Documents\Github\METAS_SCRATCH_FULLSET\2. Launcher\obj\Release\MakkoLocalServer.csprojResolveAssemblyReference.cache
+C:\Users\Ken Lai\Documents\Github\METAS_SCRATCH_FULLSET\2. Launcher\obj\Release\MakkoLocalServer.LoadingScreen.resources
+C:\Users\Ken Lai\Documents\Github\METAS_SCRATCH_FULLSET\2. Launcher\obj\Release\MakkoLocalServer.Properties.Resources.resources
+C:\Users\Ken Lai\Documents\Github\METAS_SCRATCH_FULLSET\2. Launcher\obj\Release\MakkoLocalServer.csproj.GenerateResource.Cache
