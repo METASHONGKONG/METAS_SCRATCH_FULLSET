@@ -1641,17 +1641,32 @@ public class ArduinoPrims {
 		var clockwise:String = interp.arg(block, 1);
 		var percentage:int = interp.arg(block, 2);
 
-		// Control the clockwise / counterclockwise
-		// if the motor pin is 3, the direction pin is 4
-		var request:ServerRequest = new ServerRequest(SET_DIGITAL_PIN, connection, (pin == 3)? 4 : 0, (clockwise == 'clockwise')? 1 : 0);
-		app.serverRequestManager.sendRequest(request);
-
-		// Control the speed
+		// Calculate the speed
 		var maxValue:int = 1023;
 		var value:int = Math.min(Math.max(0, (percentage / 100) * maxValue), maxValue); // make sure between 0 and maxValue
-
-		request = new ServerRequest(SET_PWM_PIN, connection, pin, value);
-		app.serverRequestManager.sendRequest(request);		
+		
+		var M2_CW:int = 5 
+		var M2_ACW:int = 4 
+		var M1_CW:int = 2 
+		var M1_ACW:int = 3 
+		
+		if (pin == 1){
+			if (clockwise == 'clockwise'){
+				app.serverRequestManager.sendRequest(new ServerRequest(SET_PWM_PIN, connection, M1_CW, value));
+				app.serverRequestManager.sendRequest(new ServerRequest(SET_PWM_PIN, connection, M1_ACW, 0));
+			}else{
+				app.serverRequestManager.sendRequest(new ServerRequest(SET_PWM_PIN, connection, M1_CW, 0));
+				app.serverRequestManager.sendRequest(new ServerRequest(SET_PWM_PIN, connection, M1_ACW, value));
+			}
+		}else if (pin == 2){
+			if (clockwise == 'clockwise'){
+				app.serverRequestManager.sendRequest(new ServerRequest(SET_PWM_PIN, connection, M2_ACW, 0));
+				app.serverRequestManager.sendRequest(new ServerRequest(SET_PWM_PIN, connection, M2_CW, value));
+			}else{
+				app.serverRequestManager.sendRequest(new ServerRequest(SET_PWM_PIN, connection, M2_ACW, value));
+				app.serverRequestManager.sendRequest(new ServerRequest(SET_PWM_PIN, connection, M2_CW, 0));
+			}
+		}
 	}
 
 	// TO-DO: the current wait is a blocking call - blocks the whole CPU.  Need to figure out
