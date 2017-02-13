@@ -39,7 +39,7 @@ public class BoardSelector {
 		digitalOutPins = new Dictionary();
 		digitalOutPins[METAS_3_PORT] = [13];
 		digitalOutPins[METAS_8_PORT] = [5, 8, 9, 10];
-		digitalOutPins[METAS_WIRELESS] = [1, 2];
+		digitalOutPins[METAS_WIRELESS] = [1, 8];
 		digitalOutPins[ARDUINO_UNO] = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
 	}
 	
@@ -57,7 +57,7 @@ public class BoardSelector {
 		pwmPins = new Dictionary();
 		pwmPins[METAS_3_PORT] = [9];
 		pwmPins[METAS_8_PORT] = [5, 9, 10];
-		pwmPins[METAS_WIRELESS] = [1, 2];
+		pwmPins[METAS_WIRELESS] = [1, 8];
 		pwmPins[ARDUINO_UNO] = [3, 5, 6, 9, 10, 11];
 	}
 
@@ -66,7 +66,7 @@ public class BoardSelector {
 		servoPins = new Dictionary();
 		servoPins[METAS_3_PORT] = [];
 		servoPins[METAS_8_PORT] = [];
-		servoPins[METAS_WIRELESS] = [1, 2, 4, 8];
+		servoPins[METAS_WIRELESS] = [1, 2, 3, 4];
 		servoPins[ARDUINO_UNO] = [];
 	}
 

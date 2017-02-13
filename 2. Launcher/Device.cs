@@ -961,7 +961,10 @@ namespace MakkoLocalServer
                 lock (BufferThreadSafeLocker)
                 {
                     resetBuffers();
-                    Send("/reset/0/0");
+                    Send("/pwm/1/0");
+                    Send("/pwm/8/0");
+                    Send("/motor/1/cw/0");
+                    Send("/motor/2/cw/0");
                 }
             }
             public override Int32 ReadAnalogPin(Int32 pin)                                      //Thread Safe
@@ -972,8 +975,7 @@ namespace MakkoLocalServer
                 {
                     analogType[pin] = PinType.ANALOG;
 
-                    Dictionary<String, String> respond = jsonParser(Send("/analog/" + pin.ToString() + "/r"));
-                    Int32 result = Int32.Parse(respond["return_value"]);
+                    Int32 result = Int32.Parse(Send("/analog/" + pin.ToString() + "/r"));
                     if (result == 65535) throw new ClassifiedException(Error.aRest_ADCError);
                     return result;
                 }
@@ -1054,19 +1056,19 @@ namespace MakkoLocalServer
                 switch (functionname)
                 {
                     case "motor-forward":
-                        Send("/car/0/forward");
+                        Send("/forward");
                         break;
                     case "motor-backward":
-                        Send("/car/0/backward");
+                        Send("/backward");
                         break;
                     case "motor-left":
-                        Send("/car/0/left");
+                        Send("/left");
                         break;
                     case "motor-right":
-                        Send("/car/0/right");
+                        Send("/right");
                         break;
                     case "motor-stop":
-                        Send("/car/0/stop");
+                        Send("/stop");
                         break;
 
                     // Not Implemented
@@ -1096,11 +1098,10 @@ namespace MakkoLocalServer
             {
                 lock (BufferThreadSafeLocker)
                 {
-                    String url = "/i2cwrite/";
-                    url += ((Int32)address).ToString() + "_" + ((Int32)register).ToString() + "/";
+                    String url = "/rgb/0x40/";
                     List<String> tempdata = new List<String>();
                     foreach (Byte _byte in data) tempdata.Add(((Int32)_byte).ToString());
-                    url += String.Join("_", tempdata.ToArray());
+                    url += String.Join("/", tempdata.ToArray());
                     Send(url);
                 }
             }
@@ -1189,7 +1190,10 @@ namespace MakkoLocalServer
                 lock (BufferThreadSafeLocker)
                 {
                     resetBuffers();
-                    Send("/reset/0/0");
+                    Send("/pwm/1/0");
+                    Send("/pwm/8/0");
+                    Send("/motor/1/cw/0");
+                    Send("/motor/2/cw/0");
                 }
             }
             public override Int32 ReadAnalogPin(Int32 pin)                                      //Thread Safe
@@ -1200,8 +1204,7 @@ namespace MakkoLocalServer
                 {
                     analogType[pin] = PinType.ANALOG;
 
-                    Dictionary<String, String> respond = jsonParser(Send("/analog/" + pin.ToString() + "/r"));
-                    Int32 result = Int32.Parse(respond["return_value"]);
+                    Int32 result = Int32.Parse(Send("/analog/" + pin.ToString() + "/r"));
                     if (result == 65535) throw new ClassifiedException(Error.aRest_ADCError);
                     return result;
                 }
@@ -1282,19 +1285,19 @@ namespace MakkoLocalServer
                 switch (functionname)
                 {
                     case "motor-forward":
-                        Send("/car/0/forward");
+                        Send("/forward");
                         break;
                     case "motor-backward":
-                        Send("/car/0/backward");
+                        Send("/backward");
                         break;
                     case "motor-left":
-                        Send("/car/0/left");
+                        Send("/left");
                         break;
                     case "motor-right":
-                        Send("/car/0/right");
+                        Send("/right");
                         break;
                     case "motor-stop":
-                        Send("/car/0/stop");
+                        Send("/stop");
                         break;
 
                     // Not Implemented
@@ -1324,11 +1327,10 @@ namespace MakkoLocalServer
             {
                 lock (BufferThreadSafeLocker)
                 {
-                    String url = "/i2cwrite/";
-                    url += ((Int32)address).ToString() + "_" + ((Int32)register).ToString() + "/";
+                    String url = "/rgb/0x40/";
                     List<String> tempdata = new List<String>();
                     foreach (Byte _byte in data) tempdata.Add(((Int32)_byte).ToString());
-                    url += String.Join("_", tempdata.ToArray());
+                    url += String.Join("/", tempdata.ToArray());
                     Send(url);
                 }
             }
@@ -1402,11 +1404,11 @@ namespace MakkoLocalServer
             : base(_identifier)
         {
             // Device Config
-            PinResources.Add(PinType.OUTPUT, new List<Int32>() { 0, 1, 2, 3, 4, 5 });
+            PinResources.Add(PinType.OUTPUT, new List<Int32>() { 0, 1, 2, 3, 4, 5 ,8});
             PinResources.Add(PinType.ANALOG, new List<Int32>() { 0, 1 });
             PinResources.Add(PinType.INPUT, new List<Int32>() { 0, 3, 4, 5 });
-            PinResources.Add(PinType.PWM, new List<Int32>() { 0, 1, 2, 3, 4, 5 });
-            PinResources.Add(PinType.SERVO, new List<Int32>() { 1, 2, 4, 8 });
+            PinResources.Add(PinType.PWM, new List<Int32>() { 0, 1, 2, 3, 4, 5, 8 });
+            PinResources.Add(PinType.SERVO, new List<Int32>() { 1, 2, 3, 4 });
 
             FunctionResources.Add("motor-forward");
             FunctionResources.Add("motor-backward");
@@ -1427,11 +1429,11 @@ namespace MakkoLocalServer
             : base(_identifier)
         {
             // Device Config
-            PinResources.Add(PinType.OUTPUT, new List<Int32>() { 0, 1, 2, 3, 4, 5 });
+            PinResources.Add(PinType.OUTPUT, new List<Int32>() { 0, 1, 2, 3, 4, 5, 8 });
             PinResources.Add(PinType.ANALOG, new List<Int32>() { 0, 1 });
             PinResources.Add(PinType.INPUT, new List<Int32>() { 0, 3, 4, 5 });
-            PinResources.Add(PinType.PWM, new List<Int32>() { 0, 1, 2, 3, 4, 5 });
-            PinResources.Add(PinType.SERVO, new List<Int32>() { 1, 2, 4, 8 });
+            PinResources.Add(PinType.PWM, new List<Int32>() { 0, 1, 2, 3, 4, 5, 8 });
+            PinResources.Add(PinType.SERVO, new List<Int32>() { 1, 2, 3, 4 });
 
             FunctionResources.Add("motor-forward");
             FunctionResources.Add("motor-backward");

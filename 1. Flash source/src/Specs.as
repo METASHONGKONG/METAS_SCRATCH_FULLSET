@@ -484,11 +484,11 @@ public class Specs {
 		["servo %d.servoPin degree %d.servoDegree",			"S", 21, "servo:degree:", "servo port", 180],
 		
 		// Motor
-		["motor forward",									" ", 21, "motorForward"],
-		["motor backward",									" ", 21, "motorBackward"],
-		["motor left",										" ", 21, "motorLeft"],
-		["motor right",										" ", 21, "motorRight"],
-		["motor stop",										" ", 21, "motorStop"],
+		["Metas car forward",									" ", 21, "motorForward"],
+		["Metas car backward",									" ", 21, "motorBackward"],
+		["Metas car left",										" ", 21, "motorLeft"],
+		["Metas car right",										" ", 21, "motorRight"],
+		["Metas car stop",										" ", 21, "motorStop"],
 
 		["motor %d.motorPin %d.clockwise to %d.pwmValue",   " ", 21, "motor:MotorPin:Clockwise:PWM", "motor port", "clockwise", 100],
 
