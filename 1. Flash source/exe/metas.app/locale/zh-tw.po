@@ -236,23 +236,23 @@ msgstr "三原色光 紅 %d.rgbValue 綠 %d.rgbValue 藍 %d.rgbValue 白 %d.rgbV
 msgid "servo %d.servoPin degree %d.servoDegree"
 msgstr "舵機 %d.servoPin 角度 %d.servoDegree"
 
-msgid "Metas car forward"
-msgstr "Metas小車 前進"
+msgid "motor forward"
+msgstr "汽車 前進"
 
-msgid "Metas car backward"
-msgstr "Metas小車 後退"
+msgid "motor backward"
+msgstr "汽車 後退"
 
-msgid "Metas car left"
-msgstr "Metas小車 左轉"
+msgid "motor left"
+msgstr "汽車 左轉"
 
-msgid "Metas car right"
-msgstr "Metas小車 右轉"
+msgid "motor right"
+msgstr "汽車 右轉"
 
-msgid "Metas car stop"
-msgstr "Metas小車 停止"
+msgid "motor stop"
+msgstr "汽車 停止"
 
 msgid "motor %d.motorPin %d.clockwise to %d.pwmValue"
-msgstr "馬達 %d.motorPin %d.clockwise 速度 %d.pwmValue"
+msgstr "汽車 %d.motorPin %d.clockwise 速度 %d.pwmValue"
 
 msgid "cockroach forward %d.servoPin %d.servoPin" 
 msgstr "小昆蟲 前進 %d.servoPin %d.servoPin"
