@@ -1098,11 +1098,10 @@ namespace MakkoLocalServer
             {
                 lock (BufferThreadSafeLocker)
                 {
-                    String url = "/i2cwrite/";
-                    url += ((Int32)address).ToString() + "_" + ((Int32)register).ToString() + "/";
+                    String url = "/rgb/0x40/";
                     List<String> tempdata = new List<String>();
                     foreach (Byte _byte in data) tempdata.Add(((Int32)_byte).ToString());
-                    url += String.Join("_", tempdata.ToArray());
+                    url += String.Join("/", tempdata.ToArray());
                     Send(url);
                 }
             }
@@ -1328,11 +1327,10 @@ namespace MakkoLocalServer
             {
                 lock (BufferThreadSafeLocker)
                 {
-                    String url = "/i2cwrite/";
-                    url += ((Int32)address).ToString() + "_" + ((Int32)register).ToString() + "/";
+                    String url = "/rgb/0x40/";
                     List<String> tempdata = new List<String>();
                     foreach (Byte _byte in data) tempdata.Add(((Int32)_byte).ToString());
-                    url += String.Join("_", tempdata.ToArray());
+                    url += String.Join("/", tempdata.ToArray());
                     Send(url);
                 }
             }
