@@ -975,8 +975,7 @@ namespace MakkoLocalServer
                 {
                     analogType[pin] = PinType.ANALOG;
 
-                    Dictionary<String, String> respond = jsonParser(Send("/analog/" + pin.ToString() + "/r"));
-                    Int32 result = Int32.Parse(respond["return_value"]);
+                    Int32 result = Int32.Parse(Send("/analog/" + pin.ToString() + "/r"));
                     if (result == 65535) throw new ClassifiedException(Error.aRest_ADCError);
                     return result;
                 }
@@ -1206,8 +1205,7 @@ namespace MakkoLocalServer
                 {
                     analogType[pin] = PinType.ANALOG;
 
-                    Dictionary<String, String> respond = jsonParser(Send("/analog/" + pin.ToString() + "/r"));
-                    Int32 result = Int32.Parse(respond["return_value"]);
+                    Int32 result = Int32.Parse(Send("/analog/" + pin.ToString() + "/r"));
                     if (result == 65535) throw new ClassifiedException(Error.aRest_ADCError);
                     return result;
                 }
