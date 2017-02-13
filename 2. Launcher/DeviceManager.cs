@@ -390,7 +390,7 @@ namespace MakkoLocalServer
                     Byte i2c_address = (Byte)Convert.ToInt32(newPacket.Args[1].Value);
                     Byte i2c_register = (Byte)Convert.ToInt32(newPacket.Args[2].Value);
                     List<Byte> i2c_data = new List<Byte>();
-                    foreach (String _data in newPacket.Args[3].Value.Split(' ')) i2c_data.Add((Byte)Convert.ToInt32(_data, 16));
+                    foreach (String _data in newPacket.Args[3].Value.Split(' ')) i2c_data.Add((Byte)Convert.ToInt32(_data));
 
                     try
                     {

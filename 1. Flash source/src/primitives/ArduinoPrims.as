@@ -1566,18 +1566,19 @@ public class ArduinoPrims {
 	public function primInitializeRGBW(block:Block):* {
 		var address:int = 64;
 
-		nbI2CWrite(address, 0, "0xA0", processResponse);
+		//nbI2CWrite(address, 0, "0xA0", processResponse);
 
-		var rData:String = computeRegisterValue(0);
-		var gData:String = computeRegisterValue(0);
-		var bData:String = computeRegisterValue(0);
-		var wData:String = computeRegisterValue(0);
+		var rData:String = "0";
+		var gData:String = "0";
+		var bData:String = "0";
+		var wData:String = "0";
 
 		var data:String = rData + " " + gData + " " + bData + " " + wData;
 
 		var register:int = 6;
 
-		nbI2CWrite(address, register, data, processResponse);
+		//nbI2CWrite(address, register, data, processResponse);
+		i2cWrite(address, register, data, block);
 	}
 
 	public function primSetRGB(block:Block):* {
@@ -1595,13 +1596,16 @@ public class ArduinoPrims {
 			block.requestState = 0; // Reset to zero and move on
 			return;
 		}
+		
+        var maxValue:int = 100;
 
-		var rData:String = computeRegisterValue(r);
-		var gData:String = computeRegisterValue(g);
-		var bData:String = computeRegisterValue(b);
-		var wData:String = computeRegisterValue(w);
+		var rData:String = (Math.floor((r / 255) * 100)).toString();
+		var gData:String = (Math.floor((g / 255) * 100)).toString();
+		var bData:String = (Math.floor((b / 255) * 100)).toString();
+		var wData:String = (Math.floor((w / 255) * 100)).toString();
 
 		var data:String = rData + " " + gData + " " + bData + " " + wData;
+		//DialogBox.notify(Translator.map("Attention!"), data);
 		app.logDebug("data: " + data);
 	
 		var address:int = 64;
@@ -1641,17 +1645,32 @@ public class ArduinoPrims {
 		var clockwise:String = interp.arg(block, 1);
 		var percentage:int = interp.arg(block, 2);
 
-		// Control the clockwise / counterclockwise
-		// if the motor pin is 3, the direction pin is 4
-		var request:ServerRequest = new ServerRequest(SET_DIGITAL_PIN, connection, (pin == 3)? 4 : 0, (clockwise == 'clockwise')? 1 : 0);
-		app.serverRequestManager.sendRequest(request);
-
-		// Control the speed
+		// Calculate the speed
 		var maxValue:int = 1023;
 		var value:int = Math.min(Math.max(0, (percentage / 100) * maxValue), maxValue); // make sure between 0 and maxValue
-
-		request = new ServerRequest(SET_PWM_PIN, connection, pin, value);
-		app.serverRequestManager.sendRequest(request);		
+		
+		var M2_CW:int = 5 
+		var M2_ACW:int = 4 
+		var M1_CW:int = 2 
+		var M1_ACW:int = 3 
+		
+		if (pin == 1){
+			if (clockwise == 'clockwise'){
+				app.serverRequestManager.sendRequest(new ServerRequest(SET_PWM_PIN, connection, M1_CW, value));
+				app.serverRequestManager.sendRequest(new ServerRequest(SET_PWM_PIN, connection, M1_ACW, 0));
+			}else{
+				app.serverRequestManager.sendRequest(new ServerRequest(SET_PWM_PIN, connection, M1_CW, 0));
+				app.serverRequestManager.sendRequest(new ServerRequest(SET_PWM_PIN, connection, M1_ACW, value));
+			}
+		}else if (pin == 2){
+			if (clockwise == 'clockwise'){
+				app.serverRequestManager.sendRequest(new ServerRequest(SET_PWM_PIN, connection, M2_ACW, 0));
+				app.serverRequestManager.sendRequest(new ServerRequest(SET_PWM_PIN, connection, M2_CW, value));
+			}else{
+				app.serverRequestManager.sendRequest(new ServerRequest(SET_PWM_PIN, connection, M2_ACW, value));
+				app.serverRequestManager.sendRequest(new ServerRequest(SET_PWM_PIN, connection, M2_CW, 0));
+			}
+		}
 	}
 
 	// TO-DO: the current wait is a blocking call - blocks the whole CPU.  Need to figure out
