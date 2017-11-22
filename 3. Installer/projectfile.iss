@@ -2,9 +2,9 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Metas"
-#define MyAppVersion "1.1"
+#define MyAppVersion "1.2"
 #define MyAppPublisher "Metas"
-#define MyAppURL "http://www.funmetas.com"
+#define MyAppURL "http://www.metas-services.com"
 #define MyAppExeName "Launcher.exe"
 
 [Setup]
@@ -34,9 +34,9 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\Users\Ken Lai\Desktop\8.3. Installer (IP Version)\testing\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "C:\Users\Ken Lai\Desktop\8.3. Installer (IP Version)\testing\FTDI_Driver\dpinst-x86.exe"; DestDir: "{app}\FTDI_Driver"; DestName: dpinst.exe; Check: not IsWin64; Flags: ignoreversion
-Source: "C:\Users\Ken Lai\Desktop\8.3. Installer (IP Version)\testing\FTDI_Driver\dpinst-amd64.exe"; DestDir: "{app}\FTDI_Driver"; DestName: dpinst.exe; Check: IsWin64; Flags: ignoreversion
+Source: "C:\Users\Ken Lai\Desktop\New folder\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Users\Ken Lai\Desktop\New folder\FTDI_Driver\dpinst-x86.exe"; DestDir: "{app}\FTDI_Driver"; DestName: dpinst.exe; Check: not IsWin64; Flags: ignoreversion
+Source: "C:\Users\Ken Lai\Desktop\New folder\FTDI_Driver\dpinst-amd64.exe"; DestDir: "{app}\FTDI_Driver"; DestName: dpinst.exe; Check: IsWin64; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
