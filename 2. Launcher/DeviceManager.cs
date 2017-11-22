@@ -261,6 +261,29 @@ namespace MakkoLocalServer
                     }
                     FlashManager.AddResponse(new GenericSuccessResponsePacket(packetindex));
                 }
+				#endregion
+                #region set-motor-pin
+                else if (newPacket.Tag == "set-motor-pin")
+                {
+                    Int32 value = 0;
+                    try { value = (Int32) Math.Round(Double.Parse(newPacket.Args[3].Value)); }
+                    catch (Exception) {
+                        FlashManager.AddResponse(new GenericFailResponsePacket(packetindex, new ClassifiedException(Error.Input_NotNumeric)));
+                        return;
+                    }
+
+                    try
+                    {
+                        Device targetDevice = GetDeviceByIdentifier(newPacket.Args[0].Value);
+                        targetDevice.SetMotorPin(newPacket.Args[1].Value, Int32.Parse(newPacket.Args[2].Value), value);
+                    }
+                    catch (Exception e)
+                    {
+                        FlashManager.AddResponse(new GenericFailResponsePacket(packetindex, e));
+                        return;
+                    }
+                    FlashManager.AddResponse(new GenericSuccessResponsePacket(packetindex));
+                }
                 #endregion
                 #region set-pwm-pin
                 else if (newPacket.Tag == "set-pwm-pin")
