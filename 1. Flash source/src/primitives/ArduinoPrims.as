@@ -54,6 +54,7 @@ public class ArduinoPrims {
 
 	private static const SET_DIGITAL_PIN:String = "set-digital-pin";
 	private static const SET_PWM_PIN:String = "set-pwm-pin";
+	private static const SET_MOTOR_PIN:String = "set-motor-pin";
 	private static const READ_DIGITAL_PIN:String = "read-digital-pin";
 	private static const READ_ANALOG_PIN:String = "read-analog-pin";
 	private static const MOVE_SERVO:String = "move-servo";
@@ -1654,23 +1655,12 @@ public class ArduinoPrims {
 		var M1_CW:int = 2 
 		var M1_ACW:int = 3 
 		
-		if (pin == 1){
-			if (clockwise == 'clockwise'){
-				app.serverRequestManager.sendRequest(new ServerRequest(SET_PWM_PIN, connection, M1_CW, value));
-				app.serverRequestManager.sendRequest(new ServerRequest(SET_PWM_PIN, connection, M1_ACW, 0));
-			}else{
-				app.serverRequestManager.sendRequest(new ServerRequest(SET_PWM_PIN, connection, M1_CW, 0));
-				app.serverRequestManager.sendRequest(new ServerRequest(SET_PWM_PIN, connection, M1_ACW, value));
-			}
-		}else if (pin == 2){
-			if (clockwise == 'clockwise'){
-				app.serverRequestManager.sendRequest(new ServerRequest(SET_PWM_PIN, connection, M2_ACW, 0));
-				app.serverRequestManager.sendRequest(new ServerRequest(SET_PWM_PIN, connection, M2_CW, value));
-			}else{
-				app.serverRequestManager.sendRequest(new ServerRequest(SET_PWM_PIN, connection, M2_ACW, value));
-				app.serverRequestManager.sendRequest(new ServerRequest(SET_PWM_PIN, connection, M2_CW, 0));
-			}
+		if (clockwise == 'clockwise'){
+			app.serverRequestManager.sendRequest(new ServerRequest(SET_MOTOR_PIN, connection, "cw", pin, value));
+		}else{
+			app.serverRequestManager.sendRequest(new ServerRequest(SET_MOTOR_PIN, connection, "acw", pin, value));
 		}
+		
 	}
 
 	// TO-DO: the current wait is a blocking call - blocks the whole CPU.  Need to figure out

@@ -14,7 +14,7 @@ using System.IO;
 
 namespace MakkoLocalServer
 {
-    enum PinType { UNDEFINED, INPUT, OUTPUT, ANALOG, PWM, SERVO, I2C, ONEWIRE, STEPPER, ENCODER }
+    enum PinType { UNDEFINED, INPUT, OUTPUT, ANALOG, PWM, SERVO, I2C, ONEWIRE, STEPPER, ENCODER, MOTOR }
     enum Logic { LOW, HIGH }
     static class LogicHelper
     {
@@ -109,6 +109,10 @@ namespace MakkoLocalServer
         public virtual void SetServoPin(Int32 pin, Int32 value)                          //Thread Safe
         {
             lock (ThreadSafeLocker) protocol.SetServoPin(pin, value);
+        }
+		public virtual void SetMotorPin(String direction, Int32 pin, Int32 value)         //Thread Safe
+        {
+            lock (ThreadSafeLocker) protocol.SetMotorPin(direction, pin, value);
         }
         public virtual void SendRaw(List<Byte> data)                                     //Thread Safe
         {
@@ -371,6 +375,7 @@ namespace MakkoLocalServer
             public abstract void SetDigitalPin(Int32 pin, Logic value);                             //Thread Safe
             public abstract void SetPWMPin(Int32 pin, Int32 value);                                 //Thread Safe
             public abstract void SetServoPin(Int32 pin, Int32 value);                               //Thread Safe
+            public abstract void SetMotorPin(String direction, Int32 pin, Int32 value);              // Add by Ken 20171122
             public abstract void SendRaw(List<Byte> data);                                          //Thread Safe
             public abstract Int32 CallFunction(String functionname);                                //Thread Safe
             public abstract List<Byte> I2CRead(Byte address, Byte register, Int32 numBytes);        //Thread Safe
@@ -778,6 +783,27 @@ namespace MakkoLocalServer
                     Send(new List<Byte>() { (Byte)(ANALOG_MESSAGE + pin), (Byte)(value & 0x7F), (Byte)((value >> 7) & 0x7F) });
                 }
             }
+			public override void SetMotorPin(String direction, Int32 pin, Int32 value)                          //Thread Safe
+            {
+                if (!CheckPinValid(PinType.SERVO, pin)) throw new ClassifiedException(Error.Input_PinType_Mismatch);
+
+                lock (BufferThreadSafeLocker)
+                {
+                    // Set Pin Mode
+                    if (digitalType[pin] != PinType.SERVO)
+                    {
+                        digitalType[pin] = PinType.SERVO;
+                        digitalInputData[pin] = null; // Reset Buffer
+                        digitalOutputData[pin] = Logic.LOW; // Reset Buffer
+                        ResetDigitalReportCheck(pin); // Reset Buffer
+                        Send(new List<Byte>() { SET_PIN_MODE, (Byte)pin, (Byte)GetPinTypeValue(PinType.SERVO) });
+                    }
+
+                    // Set Pin to Servo Value
+                    value = (Int32)Math.Max(Math.Min(value, 180), 0);
+                    Send(new List<Byte>() { (Byte)(ANALOG_MESSAGE + pin), (Byte)(value & 0x7F), (Byte)((value >> 7) & 0x7F) });
+                }
+            }
             public override void SendRaw(List<byte> data)                                       //Thread Safe
             {
                 lock (BufferThreadSafeLocker)
@@ -1044,6 +1070,18 @@ namespace MakkoLocalServer
                     Send("/servo/" + pin.ToString() + "/" + value.ToString());
                 }
             }
+			public override void SetMotorPin(String direction, Int32 pin, Int32 value)                            //Thread Safe
+            {
+                if (!CheckPinValid(PinType.MOTOR, pin)) throw new ClassifiedException(Error.Input_PinType_Mismatch);
+
+                lock (BufferThreadSafeLocker)
+                {
+                    digitalType[pin] = PinType.MOTOR;
+
+                    // Set Output
+                    Send("/motor/"+ pin.ToString() + "/" + direction.ToString() + "/" + value.ToString());
+                }
+            }
             public override void SendRaw(List<byte> data)                                       //Thread Safe
             {
                 throw new ClassifiedException(Error.Compile_Time_Mistake_Unimplemented);
@@ -1271,6 +1309,18 @@ namespace MakkoLocalServer
 
                     // Set Output
                     Send("/servo/" + pin.ToString() + "/" + value.ToString());
+                }
+            }
+            public override void SetMotorPin(String direction, Int32 pin, Int32 value)                            //Thread Safe
+            {
+                //if (!CheckPinValid(PinType.MOTOR, pin)) throw new ClassifiedException(Error.Input_PinType_Mismatch);
+
+                lock (BufferThreadSafeLocker)
+                {
+                    digitalType[pin] = PinType.MOTOR;
+
+                    // Set Output
+                    Send("/motor/"+ pin.ToString() + "/" + direction.ToString() + "/" + value.ToString());
                 }
             }
             public override void SendRaw(List<byte> data)                                       //Thread Safe
