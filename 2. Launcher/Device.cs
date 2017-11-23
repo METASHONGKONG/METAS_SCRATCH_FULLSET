@@ -1094,16 +1094,16 @@ namespace MakkoLocalServer
                 switch (functionname)
                 {
                     case "motor-forward":
-                        Send("/forward");
+                        Send("/forward/1023");
                         break;
                     case "motor-backward":
-                        Send("/backward");
+                        Send("/backward/1023");
                         break;
                     case "motor-left":
-                        Send("/left");
+                        Send("/left/1023");
                         break;
                     case "motor-right":
-                        Send("/right");
+                        Send("/right/1023");
                         break;
                     case "motor-stop":
                         Send("/stop");
