@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Metas"
-#define MyAppVersion "1.2"
+#define MyAppVersion "1.21"
 #define MyAppPublisher "Metas"
 #define MyAppURL "http://www.metas-services.com"
 #define MyAppExeName "Launcher.exe"

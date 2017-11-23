@@ -1279,7 +1279,7 @@ public class Scratch extends Sprite {
 
 	public function showAboutDialog(b:*):void {
 		DialogBox.notify(
-				'Metas Scratch v1.2',
+				'Metas Scratch v1.21',
 				'Based on Scratch 2.0 from MIT Media Laboratory' +
 				'\n\nCopyright © 2017 Metas and Coding101' +
 				'\nAll rights reserved.', stage);
